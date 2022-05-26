@@ -1,6 +1,9 @@
-name: "S3 Sync"
+name: "s3cmd-sync"
 description: "Sync a directory to an AWS S3 repository"
 author: mchangrh
 runs:
   using: docker
   image: Dockerfile
+branding:
+  icon: refresh-cw
+  color: green
