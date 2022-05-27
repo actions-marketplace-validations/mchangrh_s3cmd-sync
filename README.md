@@ -38,9 +38,9 @@ jobs:
       with:
         args: --acl public-read --follow-symlinks --delete
       env:
-        S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-        S3_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        S3_ACCESS_KEY_SECRET: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        S3_BUCKET: ${{ secrets.S3_BUCKET }}
+        S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+        S3_ACCESS_KEY_SECRET: ${{ secrets.S3_ACCESS_KEY_SECRET }}
         S3_REGION: 'us-west-1'   # optional: defaults to us-east-1
         SOURCE_DIR: 'public'      # optional: defaults to entire repository
 ```
